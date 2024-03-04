@@ -1,0 +1,90 @@
+.start-learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 72px;
+    background-color: lightgray;
+    color: black;
+}
+.h2-start{
+    font-size: 48px;
+    margin: 32px 0px;
+    color: black;
+    font-weight: bolder;
+}
+.start-learning .courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 32px ;
+}
+
+.course-card {
+    width: 26%;
+    margin: 16px;
+    background-color: #fff;
+    transition-property: all;
+    transition-duration: 0.30s;
+    transition-timing-function: ease-in-out;
+}
+
+.course-card:hover {
+    transform: scale(1.075);
+}
+
+.start-learning img {
+    height: auto;
+    width: 100%;
+    
+}
+
+.start-learning .text {
+    margin-top: -24px;
+    padding: 16px 16px 24px;
+}
+
+.start-learning h3 {
+    font-size: 32px;
+}
+
+.start-learning p {
+    color: #837d7d;
+    font-size: 24px;
+}
+
+/*Start Learning Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    .start-learning {
+        border-bottom: 2px solid #cdb684;
+        border-top: 2px solid #cdb684;
+        padding: 32px 16px;
+    }
+
+    .start-learning .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 100%;
+        background-color: #fff;
+        margin: 8px 0;
+    }
+
+    .start-learning .text {
+        margin: 16px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .start-learning img {
+        display: none;
+    }
+
+    .start-learning p {
+        display: none;
+    }
+}

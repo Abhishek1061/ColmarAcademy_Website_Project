@@ -1,0 +1,149 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 24px;
+}
+
+.main-info {
+    width: 60%;
+    padding: 32px 24px;
+    border-right: 2px solid lightgrey;
+}
+
+.main-info img {
+    width: 100%;
+    padding-top: 16px;
+    padding-right: 24px;
+    
+}
+
+.main-info h2 {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    margin-top: 32px;
+}
+
+.main-info p {
+    font-size: 28px;
+    color: rgb(133, 133, 133);
+    margin-bottom: 32px;
+    margin-top: 0px;
+}
+
+#reference {
+    color: rgb(85, 81, 81);
+    font-size: 24px;
+}
+
+.sidebar-info-links {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 32px 0px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#orientation,
+#campus {
+    border-bottom: 1px solid lightgray;
+}
+
+#lecture,
+#campus {
+    margin-top: 2px;
+    border-top: 1px solid lightgray;
+}
+
+.sidebar-info-links .desktop-img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.sidebar p {
+    font-size: 24px;
+    color: rgb(133, 133, 133);
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgb(113, 144, 243);
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.sidebar-info-links .mobile-img {
+    display: none;
+}
+
+.sidebar-info-links .discription {
+    padding: 0 8px;
+}
+
+/*More Information Media Query for Desktop*/
+@media only screen and (min-width: 771px) {
+    .sidebar:hover {
+        background-color: lightgray;
+    }
+}
+
+/*More Information Media Query for Mobile*/
+@media only screen and (min-width: 200px) and (max-width: 770px) {
+    .container3 {
+        padding: 16px 16px 0;
+    }
+
+    .main-info {
+        display: none;
+    }
+
+    .sidebar-info-links {
+        width: 100%;
+        padding: 0;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    #orientation,
+    #campus,
+    #lecture {
+        border: 0;
+        margin-bottom: 32px;
+    }
+
+    #campus,
+    #lecture {
+        margin-top: 32px;
+        background-color: #F3F5F5;
+    }
+
+    .sidebar .desktop-img {
+        display: none;
+    }
+
+    .sidebar .mobile-img {
+        display: block;
+        width: 100%;
+    }
+
+    .sidebar .discription {
+        padding: 0 16px;
+    }
+}

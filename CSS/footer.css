@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: white;
+    color: gray;
+    border-top: 1px solid lightgray;
+    font-size: 18px;
+    margin-top: -30px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+    padding: 0 8px;
+}
+
+
+
+.footer-links a:hover {
+    color: black;
+} 
+
+
+/*Footer Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    footer {
+        border-top: none;
+        padding: 16px;
+    }
+
+    .footer-links {
+        display: none;
+    }
+}
