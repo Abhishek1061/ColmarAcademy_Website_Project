@@ -32,5 +32,3 @@ Apply CSS styling to the HTML structure to achieve the desired visual design. Ma
 ## GitHub Page
 Visit the [GitHub Page](https://abhishek1061.github.io/ColmarAcademy_Website_Project/) to view the project.
 
-Happy Coding!
-
